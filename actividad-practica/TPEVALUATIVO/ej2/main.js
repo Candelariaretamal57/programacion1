@@ -3,7 +3,7 @@ const calcular = (temp) =>{
     let mensaje;
 
     if(temp >= 14 && temp < 32){
-        mensaje ='temperatura baja'
+        mensaje ='temperatura Baja'
     }else{
         if(temp>= 32 && temp < 68){
             mensaje ='temperatura adecuada'
@@ -22,6 +22,7 @@ const calcular = (temp) =>{
 }
 //recolecta los datos y los entrega a la funcion calcular
 const mostrar = () =>{
+    //se encarga de tomar el elemento inp-temperatura ubicado en index
     const temperatura=document.getElementById("inp-temperatura").value
     //aca ejecutamos la funcion
     const resultado = calcular(temperatura)
@@ -31,5 +32,5 @@ const mostrar = () =>{
 
 //ejecuta la funcion del button id
 const button = document.getElementById("btn-analizar")
-
+//se encarga que al momento de presionar clik este tome los datos de mostrar
 button.addEventListener("click",mostrar)
