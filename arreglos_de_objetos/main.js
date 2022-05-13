@@ -6,7 +6,7 @@ let arreglo = [
 },
 {
     marca:'volkswagen',
-    modelo: 'golf 1.4 TSI',
+  modelo: 'golf 1.4 TSI',
     anio: 2022,
     origen: 'mexico'
 }
