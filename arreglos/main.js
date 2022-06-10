@@ -57,3 +57,4 @@ let copia=series.splice()
 copia.push("Dreagon Ball")
 console.log(copia)
 console.log(series)
+//la longitud del arreglo es la cantidad de elementos que contiene 
