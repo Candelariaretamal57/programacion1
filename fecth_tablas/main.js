@@ -6,7 +6,7 @@ const usuario_definidos=await usuario.json()
 
 let filas=[]
 
-
+//forma tradicional
 //recorrer los usuarios
 usuario_definidos.forEach(element => {
     let fila =

@@ -15,13 +15,27 @@ console.log(consolas)
 const imprimir =()=>{ 
     
 const longitud = consolas.length
-document.getElementById("long_1").textContent = 'La Longitud es '+ longitud
+document.getElementById("long_1").textContent = 'La Longitud es: '+ longitud
 
 const ultimo = consolas[longitud-1]
-document.getElementById("ulti_1").textContent= 'El Ultimo Elemento es '+ultimo
+document.getElementById("ulti_1").textContent= 'El Ultimo Elemento es: '+ultimo
 
 const primero= consolas[2]
-document.getElementById("prime_1").textContent= 'Elemento '+primero
+document.getElementById("prime_1").textContent= 'Elemento: '+primero
 }
 
-
+function recorrer(){
+let tabla=[]
+    consolas.forEach((element,index) => {
+     let filas=
+     `<tr>
+        <td>${index+1}</td>
+        <td>${element}</td>
+    </tr>
+    `
+    tabla.push(filas)
+    });
+    document.getElementById("tbl_body").innerHTML=tabla.join('')
+} 
+const boton = document.getElementById("tablas_1")
+boton.addEventListener ("click",recorrer)
