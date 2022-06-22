@@ -20,7 +20,7 @@ usuario_definidos.forEach(element => {
     
     
 });
-document.getElementById("").innerHTML=filas.join('')
+document.getElementById("tbl_body").innerHTML=filas.join('')
 }
 //invocamos la funcion
 obtener_usuario()
