@@ -29,7 +29,7 @@ criptos.unshift("Stellar")
 console.log(criptos)
 
 const posicion =7;
-const numeroElementos =8;
+const numeroElementos =2;
 const elementosEliminados =  criptos.splice(posicion,numeroElementos)
 console.log(elementosEliminados)
 console.log(criptos)
@@ -45,3 +45,7 @@ document.getElementById("long_1").textContent = longitud
 }
 const boton = document.getElementById("tablas_1")
 boton.addEventListener ("click",mostrar)
+
+
+const ultimo=criptos[longitud-1]
+console.log('ultimo:'+ultimo)
