@@ -5,19 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="booststrap.bundle.min.js"></script> 
 </head>
+
 <body>
-    <nav class="navbar" style="background-color:#ffd1cc ;" >poo3</nav>
+    <nav class="navbar"  style="background-color:#ffd1cc ;" >PRODUCTOS</nav>
     <div class="container">
-        <div class="row"></div>
-        <div ></div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mb_3">
+                    <label class="form-label">Descripcion</label>
+                    <input id="inp_descripcion"  class="form-control" type="text">
+                </div>
+                <div class="mb_3">
+                    <label class="form-label">Precio de venta</label>
+                    <input id="inp_precio_venta"  class="form-control" type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">categorias</label>
+                    <select  id="slt_cat" class="form-select" aria-level="default select example">
+                    <option selected>Seleccione</option>
+                    <option value="1">Heladeras</option>
+                    <option value="2">Cocinas</option>
+                    <option value="3">TV</option>
+                    </select>
+                </div>
+            
+                <button id="btn_guardar">Guardar</button>
+            </div>
+            <div class="col-lg-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>N° </th>
+                        <th>Descripcion</th>
+                        <th>Precio de Venta</th>
+                        <th>Categoria</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="t_body">
 
+                </tbody>
 
-<button id="btn">Guardar</button>
+            </table>
+        
+
+            </div>
+        </div>
     </div>
 
-<h1 id="h_resultado"></h1>
-    <script src="main.js"></script>
+
+    <script src="main.js" type="module"></script>
     
 </body>
 </html>
