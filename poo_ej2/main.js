@@ -7,3 +7,11 @@
    
  }
  document.getElementById("btn").addEventListener("click",ejecutar)
+ function listar()
+ {
+   let producto= new producto()
+   producto.obtener_productos()
+ }
+ listar()
+
+
