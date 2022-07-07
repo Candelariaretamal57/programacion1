@@ -7,7 +7,7 @@
     <title>Producto</title>
     <link rel="stylesheet" href="bootstrap.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="booststrap.bundle.min.js"></script> 
+<script src="bootstrap.bundle.min.js"></script> 
 </head>
 
 <body>
@@ -34,6 +34,7 @@
                 </div>
             
                 <button id="btn_guardar">Guardar</button>
+                <button style="display: none;"  id="btn_actualizar" class="btn btn_primary">Actualizar</button>
             </div>
             <div class="col-lg-8">
             <table class="table">
@@ -56,9 +57,26 @@
             </div>
         </div>
     </div>
+    <div id="mymodal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Eliminación</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Estás seguro de realizar esta acción?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button id="btn_eliminar" type="button" class="btn btn-primary">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-    <script src="main.js" type="module"></script>
     
+    <script src="main.js" type="module"></script>
+    <script src="auxiliar.js"></script>
 </body>
 </html>
