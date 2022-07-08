@@ -15,24 +15,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
+              <form id="form_product">
                 <div class="mb_3">
                     <label class="form-label">Descripcion</label>
                     <input id="inp_descripcion"  class="form-control" type="text">
                 </div>
                 <div class="mb_3">
-                    <label class="form-label">Precio de venta</label>
+                    <label class="form-label" >Precio de venta</label>
                     <input id="inp_precio_venta"  class="form-control" type="text">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">categorias</label>
                     <select  id="slt_cat" class="form-select" aria-level="default select example">
-                    <option selected>Seleccione</option>
+                    
                     <option value="1">Heladeras</option>
                     <option value="2">Cocinas</option>
                     <option value="3">TV</option>
                     </select>
                 </div>
-            
+              </form>
                 <button id="btn_guardar">Guardar</button>
                 <button style="display: none;"  id="btn_actualizar" class="btn btn_primary">Actualizar</button>
             </div>
