@@ -8,7 +8,7 @@ export default class Producto{
     }
     //metodo
     guardar_producto (){
-        //recolectamos todos los productos alojados en el item "prodctos" que estan en notacion JSON.
+        //recolectamos todos los productos alojados en el item "prodructos" que estan en notacion JSON.
         //Debemos convertirlo en una expresion nativa de javascript (es decir, hacemos un json.parce()) 
         let nuevo_producto={
             descripcion:this.descripcion,
@@ -35,7 +35,7 @@ export default class Producto{
     obtener_producto(){
         let lista_productos=JSON.parse(localStorage.getItem("productos"))
 
-        let filas=[]
+         filas=[]
         lista_productos.forEach((element,index) => {
             let fila=`
             <tr>
@@ -44,7 +44,7 @@ export default class Producto{
                 <td>${element.precio_venta}</td>
                 <td>${element.categoria}</td>
                 <td>
-                <button onclick="almacenar_indice(${index})" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn btn-danger btn-sm">
+                <button oncliletck="almacenar_indice(${index})" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn btn-danger btn-sm">
                     <i class="fa fa-trash"></i>  
                 </button>
                 
@@ -80,6 +80,10 @@ export default class Producto{
 
         document.getElementById("btn_guardar").style.display="block"
         document.getElementById("btn_actualizar").style.display="none"
+    }
+    vaciar_formulario()
+    {
+document.getElementById("form_producto").reset()
     }
 }  
 

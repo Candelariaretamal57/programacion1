@@ -1,5 +1,5 @@
 import Producto from"./producto.js";
- //
+ 
 function guardar(){
     let descripcion= document.getElementById("inp_descripcion").value
     let precio_venta= document.getElementById("inp_precio_venta").value
@@ -23,7 +23,7 @@ function eliminar()
 {
     let indice = localStorage.getItem("indice")
     //creamos una instancia
-    //para acceder a los metodos y atribuutos de la clase Procucto
+    //para acceder a los metodos y atributos de la clase Producto
     let producto = new Producto()
 
     //haciendo uso de la instancia 
