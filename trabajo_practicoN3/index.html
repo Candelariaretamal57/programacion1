@@ -15,7 +15,7 @@
         <div class="col-lg-4">
             <div class="mb-3">
                 <label class="form-label">Pedido</label>
-                <input id="inp_descripcion"  class="form-control" type="text" placeholder="ingrese su menu">
+                <input id="inp_pedidos"  class="form-control" type="text" placeholder="ingrese su menu">
             </div>
             <div class="mb-3">
                 <label class="form-label">Combo</label>
@@ -29,13 +29,14 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Imagen</label>
-                <input id="inp_descripcion"  class="form-control" type="text" placeholder="">
+                <input id="inp_imagen"  class="form-control" type="text" placeholder="">
             </div>
             <div class="mb-3">
                 <label class="form-label">Precio</label>
-                <input id="inp_descripcion"  class="form-control" type="text" placeholder="precio total">
+                <input id="inp_precio"  class="form-control" type="text" placeholder="precio total">
             </div>
-  <button id="btn_1">Guardar Pedido</button>
+  <button id="btn_guardar">Guardar Pedido</button>
+  <button id="btn_actualizar" style="display: none;">Actualizar</button>
         </div>
         <div class="col-lg-8">
             <table class="table">
@@ -43,7 +44,7 @@
                     <tr>
                         <th>N° </th>
                         <th>imagen</th>
-                        <th>pedido</th>
+                        <th>pedidos</th>
                         <th>combo</th>
                         <th>precio</th>
                     </tr>
@@ -57,15 +58,28 @@
 
             </div>
 
-
-
-
-
     </div>
 </div>
+<div id="mymodal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Eliminación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Estás seguro de realizar esta acción?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button id="btn_eliminar" type="button" class="btn btn-primary">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
+    <script src="auxiliar.js"></script>
     </body>
 </html>

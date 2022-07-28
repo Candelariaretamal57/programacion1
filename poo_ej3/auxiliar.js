@@ -10,7 +10,7 @@ function editar(index)
 
  document.getElementById("inp_descripcion").value=lista_productos[index].descripcion
  document.getElementById("inp_precio_venta").value=lista_productos[index].precio_venta
- document.getElementById("slt_cat").value=lista_productos[index].categoria
+ document.getElementById("slt_categorias").value=lista_productos[index].categoria
 
 
 localStorage.setItem("indice",index)
