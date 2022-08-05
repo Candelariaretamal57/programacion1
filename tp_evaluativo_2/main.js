@@ -39,7 +39,7 @@ console.log(criptos)
 
 function mostrar(){
 const longitud = criptos.length
-console.log('longitud del arreglo:  '+longitud)
+console.log('longitud del arreglo: jj '+longitud)
 document.getElementById("long_1").textContent = longitud
 
 }

@@ -40,6 +40,8 @@ console.log(series)
 const indice = series.indexOf("casados con hijos")
 console.log('indice obtendio:'+indice)
 
+console.log(series[indice])
+
 //como eliminar un elemento teniendo su posicion 
 //1er caso-eliminar un unico elemento
 series.splice(indice,1)
